@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Mudei o Título</title>
+            <style>
+                span{
+                    color: rgb(219, 132, 18);
+                    font-weight: bold;
+                }
+                fieldset{
+                    margin: 8px 0;
+                    border-radius: 5px;
+                    border-color: rgb(243, 239, 17);
+                }
+            </style>
+    </head>
+    <body>
+        <blockquote><h1><strong style="color: indigo;">Meu Primeiro <i><span>HTML</span></i></strong></h1></blockquote>
+        <h3><strong style="color:blue;">Um jogo que marcou minha infância</strong> </h3>
+        <p><strong>Wild Guns</strong> foi um dos melhores que joguei no <strong><mark>Super Nintendo<sup>®</sup></mark></strong>,
+            demorou bastante para "zerar".</p>
+
+        <blockquote>"Com certeza uma das melhores coisas que eu poderia ter comprado, eu joguei esse jogo no meu SNES 
+        a minha infância inteira, ver esse jogo tão bom quanto antes foi a melhor coisa da vida."
+        <i>(Maxy, Steam. PUBLICADA: 12 DE JULHO DE 2017.)</i></blockquote>
+
+        <h2>
+        <font color="green" face="'Trebuchet MS', Tahoma, Arial">Simplesmente Magnífico! </font>  
+        </h2> 
+        <h4>Sobre as funcionalidades</h4><a href="about.html">Clique aqui</a>   
+
+        <p><strong>Wild Guns</strong> é um jogo de tiro estilo arcada de rápido ritmo, que combina o Oeste Selvagem com 
+        steampunk. Você escolhe jogar com Clint ou Annie<sup>*</sup></p>  
+
+        <br><br><img src="https://media.tenor.com/MbeW26zbM1gAAAAd/wild-guns-taito.gif" />
+        <br><br><h3>Outros jogos que marcaram minha infância</h3>
+            <ol>
+                <li><strong>Super Nintendo<sup>®</sup></strong></li><br>
+                <ul>
+                    <li><i>Top Gear 3000</i></li>
+                    <li><i>Super Mario Kart</i></li>
+                    <li><i>Super Bomberman</i></li><br>
+                </ul>
+                <li><strong>PlayStation<sup>®</sup></strong></li><br>
+                <ul>
+                    <li><i>Sheep Raider</i></li>
+                    <li><i>Crash Bandicoot</i></li>
+                    <li><i>Digimon World 3</i></li>
+                </ul>
+            </ol><br><br>
+        <form onsubmit="" method="get">
+            <h3>Me fala sobre você!</h3>
+            <p>Qual seu console favorito?</p>
+            <input type="radio" name="console[]" value="PS"> + PS <br>
+            <input type="radio" name="console[]" value="XBOX"> + XBOX <br>
+            <input type="radio" name="console[]" value="Nintendo Switch"> + Nintendo Switch <br>
+            <input type="radio" name="console[]" value="PC"> + PC
+            <p>Qual tipo de jogo prefere?</p>
+            <select name="role">
+                <option value="">Selecione</option>
+                <option value="Multiplayer">Multiplayer</option>
+                <option value="Solo">Solo</option>
+            </select>
+            <p>Qual estilo de jogo?</p>
+            <input type="checkbox" name="estilo[]" value="Ação"> + Ação <br>
+            <input type="checkbox" name="estilo[]" value="Aventura"> + Aventura <br>
+            <input type="checkbox" name="estilo[]" value="Esporte"> + Esporte <br>
+            <input type="checkbox" name="estilo[]" value="Simulação"> + Simulação <br>
+            <input type="checkbox" name="estilo[]" value="Estratégia"> + Estratégia <br>
+            <br>
+            <p>Me fale sobre outros jogos que você gosta.</p>
+            <label>Messagem</label>
+            <textarea name="Messagem" id="" cols="30" rows="10"></textarea>
+            <button type="submit" onclick="alert('Nossa! Jurava que tu não curtia esses.')">Confirmar</button>
+        </h3><br>
+        </form>
+        <h3>Formulário</h3>
+        <fieldset>
+            <legend>Dados Pessoas</legend>
+        <form name="Signup" onsubmit="alert('Formulário Enviado')" autocomplete="off" target="_blank" method="post" action="#">
+            Nome:<input type="text" name="name" /><br>
+            Idade: <input type="number" min="0" name="age" /><br>
+            Senha:<input type="password" name="password" /><br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        </form>
+    <p><strong>Eu acho este jogo simplesmente um dos melhores que já joguei</strong></p>
+    <embed src="Shadow.mp4" width="800" height="550"><br>
+    
+
+    </body>
+
+    <br><br><br><footer>*Na versão reloaded você pode jogar como Clint, Annie, Doris ou Bullet, o cão com o seu 
+    drone sentinela. Você pode encontrar-lo clicando no link do site da <a href="https://store.steampowered.com/app/585910/Wild_Guns_Reloaded/"
+    title="Clique aqui e confira" target="_blank">Steam.</a>
+    </footer>
+
+</html>
