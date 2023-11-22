@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro CSS</title>
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+  
+</head>
+<body>
+    <h1><strong>Trilha de CSS</strong></h1>
+    <h2>Meus Primeiros Estudos em CSS</h2>
+    
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas"> Bem Vindo</p>
+    <p id="explicacao-seletores">No CSS nós possuímos os seletores por ID</p>
+    <div>
+        <ul>
+            <li class="seletores-mais-comuns"><b>Seletor por Tipo:</b> Busca elementos por uma tag HTML específica</li>
+            <li class="seletores-mais-comuns"><b>Seletor por ID (#):</b> Busca elementos através do atributo "id"</li>
+            <li class="seletores-mais-comuns"><b>Seletor por Classe (.):</b> Busca elementos através do atributo "Class"</li>
+            <li><b>Seletor Universal (*):</b> Seleciona todos os elementos HTML</li>
+            <li><b>Seletor de Atributo ([atrib]):</b> Seleciona elementos que possuem atributo específico em nosso documento HTML e conseguimos também buscar atributos com um valor específico.</li>
+        </ul>
+    </div>
+    <h1>Agrupamento de Seletores</h1>
+    <p>Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os seletores utilizando uma vírgula (,).</p>
+    <div>Assim, não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer só um bloco de CSS e reutilizar as mesmas regras!</div>
+    
+    <h1>Combinadores</h1>
+    <p>São uma ferramenta poderosa para direcionar estilos a elementos específicos em uma estrutura aninhada. Eles permitem que você controle a aparência dos elementos com base em sua hierarquia, simplificando a estilização e melhorando a legibilidade do código.</p>
+    <h2>TIPOS DE COMBINADORES</h2>
+    <H3>Combinador Descendente (Espaço)</H3>
+    <p>É um dos quatro tipos básicos de seletores de CSS, que permite estilizar elementos que são filhos diretos ou descendentes de outro elemento. Essa relação de descendência é fundamental para a hierarquia dos elementos em um documento HTML e é usada para direcionar estilos a elementos específicos em uma estrutura aninhada.</p>
+    <p> A estrutura é [SELETOR] [COMBINADOR] [SELETOR]</p>
+        <ul>
+            <li class="fundo-verde" id="lista-01">
+                <div>Item 01</div>
+                <ul>
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li class="fundo-verde" id="lista-02">
+                <div>Item 02</div>
+                <ul>
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Para informações mais detalhadas, clique <a rel="stylesheet" href="https://www.dio.me/articles/combinador-descendente-em-css-explorando-a-hierarquia-dos-elementos" target="_blank"> aqui</a>.</p>
+        <H3>Combinador Filho ('>')</H3>
+        <p>É um seletor que permite direcionar elementos filhos diretos de um elemento pai específico. Ele cria um caminho de seleção que exclui elementos aninhados além do nível imediatamente abaixo do elemento pai.</p>
+
+            <div class="fundo-azul">
+                <p>Parágrafo 1 dentro da div</p>
+                <p>Parágrafo 2 dentro da div</p>
+                <span>
+                    <p>Parágrafo 3 dentro da div, dentro do span</p>
+                </span>
+            </div>
+
+            <div class="fundo-verde">
+                <p>Parágrafo 4 dentro da div</p>
+                <p>Parágrafo 5 dentro da div</p>
+                <span>
+                    <p>Parágrafo 6 dentro da div, dentro do span</p>
+                </span>
+            </div>
+            
+            <p>Parágrafo 7, fora da div</p>
+            <p>Parágrafo 8, fora da div</p>
+
+        <h4> Para informações mais detalhadas, clique <a rel="stylesheet" href="https://www.dio.me/articles/combinador-filho-em-css-direcionando-estilos-com-precisao" target="_blank"> aqui</a>.</h4>
+        <H3>Combinador Irmão Adjacente (+) e Geral (~)</H3>
+        <h4>Geral (+)</h4>
+        <div class="fundo-azul">
+            <p>Parágrafo 1 dentro da div</p>
+            <p>Parágrafo 2 dentro da div</p>
+            <span>
+                <p>Parágrafo 3 dentro da div, dentro do span</p>
+            </span>
+        </div>
+        <p>Parágrafo 4, fora da div</p>
+        <p>Parágrafo 5, fora da div</p>
+
+        <div class="fundo-verde">
+            <p>Parágrafo 6 dentro da div</p>
+            <p>Parágrafo 7 dentro da div</p>
+        </div>
+        <h4> Para informações mais detalhadas, clique <a rel="stylesheet" href="https://pt.w3hmong.com/css/css_combinators.htm" target="_blank"> aqui</a>.</h4>
+
+<div id="elemento-01"></div>
+<div id="elemento-02"></div>        
+        
+
+</body>
+</html>

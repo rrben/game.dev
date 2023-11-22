@@ -1,0 +1,51 @@
+h1{
+    background: rgb(255, 94, 0); 
+    color: white;
+    width: 500px;
+    min-height: 25px;
+    }
+h2{
+    color: brown
+    width: 500px;
+}
+   
+div {
+    background: lightblue;
+    color: darkblue;
+    width: 500px;
+}   
+#texto-boas-vindas {
+    background: rgb(255, 115, 0);
+    color: white;
+    
+}
+.seletores-mais-comuns {
+    color: orangered;
+}
+.texto-maiusculo {
+    text-transform: uppercase;
+}
+* {
+    font-weight: bold;
+ }
+[title] {
+    color: orange;
+} 
+li li {
+    color: green;
+}
+div > p {
+    background: lightblue;
+}
+.fundo-azul > p{
+    background: olive;
+}
+div + p {
+    color: green;
+    background: blueviolet;
+    width: 500px;
+}
+div ~ p {
+    color: crimson;
+}
+
